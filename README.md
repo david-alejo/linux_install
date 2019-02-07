@@ -15,7 +15,7 @@ Also, there are several boot modes. Mainly UEFI and Legacy.
 To be able to boot from a USB, the boot mode should be UEFI
 When installing the OS, it is adviced to install the GRUB in Legacy mode (and then you should change the boot mode in the BIOS to Legacy for running Linux).
 
-Linux installation:
+- Linux installation:
 
 I installed linux from a network installer that does not use graphic drivers and therefore does not get freezed at the startup.
 
@@ -30,14 +30,16 @@ Possible problem: Screen freezing while installing
 
 
 
-Drivers installation and more:
+- Drivers installation and more:
 
 NVIDIA propietary drivers:
 
-sudo add-apt-repository ppa:graphics-drivers/ppa
-sudo apt update
-# You can chenge this driver to whatever version suits you best :)
-sudo apt install nvidia-driver-410
-sudo reboot
+    sudo add-apt-repository ppa:graphics-drivers/ppa
+    sudo apt update
 
+    sudo apt install nvidia-driver-410  
+    sudo reboot
+
+
+(You can chenge this driver to whatever version suits you best)
 
