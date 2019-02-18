@@ -37,7 +37,7 @@ Possible problem: Screen freezing while installing
     Press e
     Find the line that starts with linux then add modprobe.blacklist=nouveau after quiet splash.
 
-When installing the OS, I let the Ubuntu installer to automatically handle the partition of my SDD of 256 GB and it was also installed in UEFI mode. 
+When installing the OS, I let the Ubuntu installer to automatically handle the partition of my SDD of 256 GB and it was also installed in UEFI mode.  However, Ricardo Ragel points that you should install it in Legacy mode if you wish to install Microsoft Windows 10 afterwards and do a dual boot.
 
 
 
