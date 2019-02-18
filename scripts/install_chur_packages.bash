@@ -18,8 +18,7 @@ sudo aptitude install -y vlc
 sudo aptitude install .y kdenlive # Earlier to 18.04 it's better to install the app image https://kdenlive.org/en/download/
 
 # visual code
-wget https://go.microsoft.com/fwlink/?LinkID=760868
-mv https://go.microsoft.com/fwlink/?LinkID=760868 vs_code.deb
+wget -O vs_code.deb https://go.microsoft.com/fwlink/?LinkID=760868 
 sudo apt install ./vs_code.deb
 rm vs_code.deb
 
