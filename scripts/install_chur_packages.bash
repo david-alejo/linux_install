@@ -7,8 +7,15 @@ sudo apt install nvidia-driver-410
 
 # basic packages
 sudo apt-get install aptitude
-sudo aptitude install -y ssh git terminator    # Basic stuff 
-sudo aptitude install -y kate kdevelop kompare kolourpaint4 # KDE -related stuff (I love it) 
+sudo aptitude install -y ssh git terminator    # Basic stuff
+
+# KDE -related stuff (I love it) 
+sudo aptitude install -y kate kdevelop kompare kolourpaint4 
+
+
+# Multimedia packages
+sudo aptitude install -y vlc
+sudo aptitude install .y kdenlive # Earlier to 18.04 it's better to install the app image https://kdenlive.org/en/download/
 
 # visual code
 wget https://go.microsoft.com/fwlink/?LinkID=760868
