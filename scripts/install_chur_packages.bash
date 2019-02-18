@@ -1,13 +1,14 @@
 #! /bin/bash
 
-# Uncomment for nvidia drivers
-#sudo add-apt-repository ppa:graphics-drivers/ppa
-#sudo apt update
-#sudo apt install nvidia-driver-410
+# Nvidia drivers
+sudo add-apt-repository ppa:graphics-drivers/ppa
+sudo apt update
+sudo apt install nvidia-driver-410
 
 # basic packages
 sudo apt-get install aptitude
-sudo aptitude install kolourpaint4 kate kdevelop git terminator
+sudo aptitude install -y ssh git terminator    # Basic stuff 
+sudo aptitude install -y kate kdevelop kompare kolourpaint4 # KDE -related stuff (I love it) 
 
 # visual code
 wget https://go.microsoft.com/fwlink/?LinkID=760868
@@ -20,4 +21,4 @@ wget -O slack.deb https://downloads.slack-edge.com/linux_releases/slack-desktop-
 
 # Power saving and related source: http://tipsonubuntu.com/2018/11/18/quick-tip-improve-battery-life-ubuntu-18-04-higher/
 sudo add-apt-repository ppa:linuxuprising/apps
-sudo aptitude install tlp powertop tlpui
+sudo aptitude install -y tlp powertop tlpui
