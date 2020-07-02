@@ -16,4 +16,5 @@ sudo apt install ./vs_code.deb
 rm vs_code.deb
 
 # Slack
-wget -O slack.deb https://downloads.slack-edge.com/linux_releases/slack-desktop-3.1.0-amd64.deb && sudo apt install ./slack.deb && rm slack.deb
+sudo snap install slack --classic
+
