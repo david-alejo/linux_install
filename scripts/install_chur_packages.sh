@@ -3,14 +3,14 @@
 # Nvidia drivers
 sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt update
-sudo apt install nvidia-driver-410
+sudo apt install nvidia-driver-410 -y
 
 # basic packages
-sudo apt-get install aptitude
+sudo apt-get install aptitude -y
 sudo aptitude install -y ssh git terminator    # Basic stuff
 
 # KDE -related stuff (I love it) 
-sudo aptitude install -y kate kdevelop kompare kolourpaint4 
+sudo aptitude install -y kate kdevelop kompare kolourpaint4 shellcheck
 
 
 # Multimedia packages
@@ -29,3 +29,8 @@ sudo add-apt-repository ppa:linuxuprising/apps
 sudo aptitude install -y tlp powertop tlpui
 
 sudo apt install -y vim
+
+#Configure bashrc with stuff
+script_dir=$(dirname $0)
+cat "$script_dir"/git_checker.sh >> "$HOME"/.bashrc
+cat "$script_dir"/aliases.sh >> "$HOME"/.bash_aliases
