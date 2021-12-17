@@ -26,10 +26,10 @@ fi
 
 # basic packages
 sudo apt-get install aptitude -y
-sudo aptitude install -y ssh git terminator shellcheck vim  # Basic stuff
+sudo aptitude install -y ssh git terminator shellcheck vim ncdu  # Basic stuff
 
 # KDE -related stuff (I love it) 
-sudo aptitude install -y kate kdevelop kompare kolourpaint4 
+sudo aptitude install -y kate kdevelop kompare kolourpaint4 okular
 
 # Multimedia packages
 sudo aptitude install -y vlc kdenlive # Earlier to 18.04 it's better to install the app image https://kdenlive.org/en/download/
