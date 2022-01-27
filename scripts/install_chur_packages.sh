@@ -26,7 +26,7 @@ fi
 
 # basic packages
 sudo apt-get install aptitude -y
-sudo aptitude install -y ssh git terminator shellcheck vim ncdu  # Basic stuff
+sudo aptitude install -y ssh git terminator shellcheck vim ncdu mlocate # Basic stuff
 
 # KDE -related stuff (I love it) 
 sudo aptitude install -y kate kdevelop kompare kolourpaint4 okular
