@@ -29,7 +29,7 @@ sudo apt-get install aptitude -y
 sudo aptitude install -y ssh git terminator shellcheck vim ncdu mlocate # Basic stuff
 
 # KDE -related stuff (I love it) 
-sudo aptitude install -y kate kdevelop kompare kolourpaint4 okular
+sudo aptitude install -y kate kdevelop kompare kolourpaint4 okular krita
 
 # Multimedia packages
 sudo aptitude install -y vlc kdenlive # Earlier to 18.04 it's better to install the app image https://kdenlive.org/en/download/
