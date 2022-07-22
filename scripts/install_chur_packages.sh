@@ -84,3 +84,13 @@ else
     echo "Did not add stuff to bashrc nor bash_aliases"
 fi
 
+zenity --question \
+       --title="Adding emacs and more configuration" \
+       --width=250 \
+       --text="Do you want to add emacs and a utility to configure the keyboard?"
+ans=$?
+if [ $ans -eq 0 ]
+then
+     sudo apt install emacs gnome-tweaks
+     
+fi
