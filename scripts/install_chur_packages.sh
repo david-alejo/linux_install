@@ -1,5 +1,6 @@
 #! /bin/bash
-echo "Welcome to the Chur\'s packages install script. Installing zenity"
+echo "Welcome to the Chur\'s packages install script. Upgrading and installing zenity"
+sudo apt upgrade -y
 sudo apt install -y zenity 
 
 zenity --info \
@@ -87,10 +88,21 @@ fi
 zenity --question \
        --title="Adding emacs and more configuration" \
        --width=250 \
-       --text="Do you want to add emacs and a utility to configure the keyboard?"
+       --text="Do you want to add emacs and a utility to configure the keyboard (gnome-tweaks)?"
 ans=$?
 if [ $ans -eq 0 ]
 then
-     sudo apt install emacs gnome-tweaks
-     
+     sudo add-apt-repository ppa:kelleyk/emacs
+     sudo aptitude update
+     sudo apt install emacs27 gnome-tweaks
+     rm -rf ~/.emacs.d
+     git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+     mkdir -p ~/.emacs.d/elpa/gnupg
+     gpg --homedir ~/.emacs.d/elpa/gnupg --receive-keys 066DAFCB81E42C40
+     # Install Source Code pro
+     wget https://github.com/adobe-fonts/source-code-pro/archive/2.030R-ro/1.050R-it.zip
+     unzip 1.050R-it.zip
+     mkdir -p ~/.fonts
+     cp source-code-pro-*-it/OTF/*.otf ~/.fonts/
+     rm -rf 1.050R-it.zip source-code-pro*
 fi
