@@ -46,7 +46,7 @@ git clone -b noetic https://github.com/robotics-upo/marsupial_optimizer.git
 
 # To get action for actionlib
 echo "\n Installing UPO Actions \n\n"
-git clone https://github.com/robotics-upo/upo_actions.git
+git clone -b marsupial https://github.com/robotics-upo/upo_actions.git
 
 #To get a marker in the desired frame_link
 echo "\n Installing UPO Markers \n\n"
