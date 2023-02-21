@@ -56,5 +56,5 @@ git clone https://github.com/robotics-upo/upo_markers.git
 git clone -b melodic-devel https://github.com/robotics-upo/timed_roslaunch.git
 
 # Compile the workspace
-cd ~
+cd ~/marsupial_ws
 catkin_make
