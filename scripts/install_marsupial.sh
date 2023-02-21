@@ -59,6 +59,15 @@ git clone -b melodic-devel https://github.com/robotics-upo/timed_roslaunch.git
 git clone -b simplified https://github.com/robotics-upo/upo_path_tracker.git
 
 # Get catenary checker
+sudo apt-get install libqt5charts5-dev libqt5widgets5
+cd ~
+git clone https://github.com/robotics-upo/dbscan_line
+cd dbscan_line
+mkdir build
+cd build
+cmake ..
+make
+sudo make install 
 git clone https://github.com/robotics-upo/catenary_checker.git
 
 # Compile the workspace
