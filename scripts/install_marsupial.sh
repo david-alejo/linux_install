@@ -55,6 +55,12 @@ git clone https://github.com/robotics-upo/upo_markers.git
 # Get timed roslaunch
 git clone -b melodic-devel https://github.com/robotics-upo/timed_roslaunch.git
 
+# Get upo path tracker
+git clone -b simplified https://github.com/robotics-upo/upo_path_tracker.git
+
+# Get catenary checker
+git clone https://github.com/robotics-upo/catenary_checker.git
+
 # Compile the workspace
 cd ~/marsupial_ws
 catkin_make
