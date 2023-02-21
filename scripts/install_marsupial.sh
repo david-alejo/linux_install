@@ -5,6 +5,7 @@ sudo apt-get install ros-$ROS_DISTRO-costmap-2d ros-$ROS_DISTRO-octomap-server r
 sudo apt-get install libpcl-dev libpcl libpcl-kdtree1.10
 
 # Create workspace
+source /opt/ros/$ROS_DISTRO/setup.bash
 cd ~
 mkdir -p ~/marsupial_ws/src
 cd ~/marsupial_ws/
