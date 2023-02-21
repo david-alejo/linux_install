@@ -55,18 +55,6 @@ git clone https://github.com/robotics-upo/upo_markers.git
 git clone -b melodic-devel https://github.com/robotics-upo/timed_roslaunch.git
 
 
-# CERES Solver Installation
-echo "\n Installing CERES \n\n"
-## CMake
-sudo apt-get install cmake
-## google-glog + gflags
-sudo apt-get install libgoogle-glog-dev libgflags-dev -y
-## BLAS & LAPACK
-sudo apt-get install libatlas-base-dev -y
-## Eigen3
-sudo apt-get install libeigen3-dev -y
-## SuiteSparse and CXSparse (optional)
-sudo apt-get install libsuitesparse-dev -y
 
 # Compile the workspace
 cd ~

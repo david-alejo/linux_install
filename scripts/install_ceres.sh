@@ -1,4 +1,18 @@
 #! /bin/bash
+# CERES Solver Installation
+echo "\n Installing CERES \n\n"
+## CMake
+sudo apt-get install cmake
+## google-glog + gflags
+sudo apt-get install libgoogle-glog-dev libgflags-dev -y
+## BLAS & LAPACK
+sudo apt-get install libatlas-base-dev -y
+## Eigen3
+sudo apt-get install libeigen3-dev -y
+## SuiteSparse and CXSparse (optional)
+sudo apt-get install libsuitesparse-dev -y
+
+
 cd ~
 git clone https://ceres-solver.googlesource.com/ceres-solver
 # tar zxf ceres-solver-2.0.0.tar.gz
