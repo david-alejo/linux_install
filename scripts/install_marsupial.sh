@@ -67,7 +67,8 @@ mkdir build
 cd build
 cmake ..
 make
-sudo make install 
+sudo make install
+cd ~/marsupial_ws/src
 git clone https://github.com/robotics-upo/catenary_checker.git
 
 # Compile the workspace
