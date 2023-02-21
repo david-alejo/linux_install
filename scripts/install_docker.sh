@@ -12,4 +12,5 @@ sudo usermod -aG docker $USER
 sudo systemctl restart docker.service
 
 # Test
-docker run --rm nvidia/cuda:11.1-cudnn8-runtime-ubi8 nvidia-smi
+docker run --rm --runtime=nvidia --gpus all nvidia/cuda:11.6.2-base-ubuntu20.04 nvidia-smi
+
