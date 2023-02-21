@@ -2,7 +2,7 @@
 export ROS_DISTRO=noetic
 sudo apt-get install ros-$ROS_DISTRO-octomap-msgs ros-$ROS_DISTRO-octomap-ros -y
 sudo apt-get install ros-$ROS_DISTRO-costmap-2d ros-$ROS_DISTRO-octomap-server ros-$ROS_DISTRO-octomap-mapping -y
-sudo apt-get intall libpcl-dev libpcl libpcl-kdtree1.10
+sudo apt-get install libpcl-dev libpcl libpcl-kdtree1.10
 
 # Create workspace
 cd ~
@@ -67,19 +67,6 @@ sudo apt-get install libatlas-base-dev -y
 sudo apt-get install libeigen3-dev -y
 ## SuiteSparse and CXSparse (optional)
 sudo apt-get install libsuitesparse-dev -y
-cd ~
-git clone https://ceres-solver.googlesource.com/ceres-solver
-# tar zxf ceres-solver-2.0.0.tar.gz
-mkdir ceres-bin
-cd ceres-bin
-# cmake ../ceres-solver-2.0.0
-cmake ../ceres-solver
-make -j3
-make test
-## Optionally install Ceres, it can also be exported using CMake which
-## allows Ceres to be used without requiring installation, see the documentation
-## for the EXPORT_BUILD_DIR option for more information.
-sudo make install
 
 # Compile the workspace
 cd ~
