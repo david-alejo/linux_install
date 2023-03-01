@@ -4,6 +4,12 @@ alias gpull="git pull"
 alias gpush="git push"
 alias gf="git fetch"
 alias ..="cd .."
+
+# Alias for marsupial docker
+alias ms_dock="rocker --network host --x11 --user --home --mode interactive marsupial"
+alias connect_dock="docker exec -it \"$(docker ps | cut -d' ' -f1 | tail -1)\" /bin/bash"
+alias ms_ros1="source ~/marsupial_ws/devel/setup.bash"
+
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
