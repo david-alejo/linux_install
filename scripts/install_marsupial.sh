@@ -1,6 +1,6 @@
 #! /bin/bash
 export ROS_DISTRO=noetic
-sudo apt-get install ros-$ROS_DISTRO-octomap-msgs ros-$ROS_DISTRO-octomap-ros -y
+sudo apt-get install ros-$ROS_DISTRO-octomap-msgs ros-$ROS_DISTRO-octomap-ros ros-$ROS_DISTRO-geographic-msgs -y
 sudo apt-get install ros-$ROS_DISTRO-costmap-2d ros-$ROS_DISTRO-octomap-server ros-$ROS_DISTRO-octomap-mapping -y
 sudo apt-get install libpcl-dev libpcl-kdtree1.10
 
