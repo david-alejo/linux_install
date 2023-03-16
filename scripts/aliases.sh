@@ -8,7 +8,11 @@ alias ..="cd .."
 # Alias for marsupial docker
 alias ms_dock="rocker --network host --x11 --user --home --mode interactive marsupial"
 alias connect_dock="docker exec -it \"$(docker ps | cut -d' ' -f1 | tail -1)\" /bin/bash"
-alias ms_ros1="source ~/marsupial_ws/devel/setup.bash"
+alias ms_ros1="source ~/marsupial_ws/devel/setup.bash && export IGNITION_VERSION=fortress"
+alias arco_core="export ROS_MASTER_URI=http://arco:11311"
+alias local_core="export ROS_MASTER_URI=http://localhost:11311"
+alias drone="ssh drone@drone"
+alias arco="ssh idmind@arco"
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then

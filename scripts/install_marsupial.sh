@@ -20,9 +20,12 @@ git clone https://github.com/robotics-upo/odom_to_tf.git
 
 ## Dependencies for Behavior Tree
 echo "\n Installing BT Dependencies \n\n"
-sudo apt-get install ros-$ROS_DISTRO-ros-type-introspection -y
+sudo apt-get install ros-$ROS_DISTRO-ros-type-introspection ros-$ROS_DISTRO-nmea-msgs ros-$ROS_DISTRO-mavlink ros-$ROS_DISTRO-geographic-msgs -y
+sudo apt-get install ros-$ROS_DISTRO-mavros
 sudo apt-get install qtbase5-dev libqt5svg5-dev -y
-sudo apt install libdw-dev -y
+sudo apt install libdw-dev libann-dev -y
+sudo apt-get install ros-noetic-geographic-msgs ros-noetic-nmea-msgs
+
 echo "\n Installing BT Packages \n\n"
 # git clone https://github.com/robotics-upo/behavior-tree-upo-actions.git
 git clone https://github.com/robotics-upo/BehaviorTree.CPP.git

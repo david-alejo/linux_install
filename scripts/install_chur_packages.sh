@@ -32,6 +32,9 @@ sudo aptitude install -y ssh git terminator shellcheck vim ncdu mlocate # Basic 
 # KDE -related stuff (I love it) 
 sudo aptitude install -y kate kdevelop kompare kolourpaint4 okular krita kile texlive-full
 
+# Latex related packages
+sudo aptitude install -y imagemagick texlive-latex-recommended texlive-full texlive-latex-extra kile texlive-science
+
 # Multimedia packages
 sudo aptitude install -y vlc kdenlive # Earlier to 18.04 it's better to install the app image https://kdenlive.org/en/download/
 
