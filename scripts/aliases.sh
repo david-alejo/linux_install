@@ -13,6 +13,8 @@ alias arco_core="export ROS_MASTER_URI=http://arco:11311"
 alias local_core="export ROS_MASTER_URI=http://localhost:11311"
 alias drone="ssh drone@drone"
 alias arco="ssh idmind@arco"
+alias cm="cd ~/marsupial_ws && source devel/setup.bash && export IGNITION_VERSION=fortress && catkin_make"
+alias set_dji="cd ~/marsupial_ws/src/Onboard-SDK-ROS/Onboard-SDK-3.8.1-build/ && sudo make install && cd"
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
