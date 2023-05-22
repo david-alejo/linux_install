@@ -15,6 +15,7 @@ alias drone="ssh drone@drone"
 alias arco="ssh idmind@arco"
 alias cm="cd ~/marsupial_ws && source devel/setup.bash && export IGNITION_VERSION=fortress && catkin_make"
 alias set_dji="cd ~/marsupial_ws/src/Onboard-SDK-ROS/Onboard-SDK-3.8.1-build/ && sudo make install && cd"
+alias set_ros2="source ~/ros2_ws/install/setup.bash"
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -26,6 +27,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
 fi
+
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
