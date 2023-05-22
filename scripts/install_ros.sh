@@ -9,3 +9,8 @@ sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31
 
 sudo apt-get update
 sudo apt-get install ros-"$1"-desktop-full -y
+
+if [ $1. -eq humble. ]; then
+    echo "Installing common extensions for autocompletion"
+    sudo apt-get install python3-colcon-common-extensions -y
+fi
