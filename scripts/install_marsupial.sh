@@ -72,7 +72,7 @@ cmake ..
 make
 sudo make install
 cd ~/marsupial_ws/src
-git clone -b devel https://github.com/robotics-upo/catenary_checker.git
+git clone  https://github.com/robotics-upo/catenary_checker.git
 
 # Compile the workspace
 cd ~/marsupial_ws
