@@ -76,4 +76,4 @@ git clone  https://github.com/robotics-upo/catenary_checker.git
 
 # Compile the workspace
 cd ~/marsupial_ws
-catkin_make
+catkin_make -j4
