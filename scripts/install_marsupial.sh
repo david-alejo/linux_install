@@ -61,6 +61,8 @@ git clone -b melodic-devel https://github.com/robotics-upo/timed_roslaunch.git
 # Get upo path tracker
 git clone -b simplified https://github.com/robotics-upo/upo_path_tracker.git
 
+git clone https://github.com/robotics-upo/upo_actions
+
 # Get catenary checker
 sudo apt-get install libqt5charts5-dev libqt5widgets5
 cd ~
