@@ -9,7 +9,7 @@ RUN cd ~/ && git clone https://github.com/david-alejo/linux_install
 
 RUN cd ~/linux_install/scripts && ./install_ceres.sh
 RUN git config --global credential.helper store
-RUN cd ~ && git clone https://david-alejo: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@github.com/robotics-upo/upo_path_tracker -b simplified
+RUN cd ~ && git clone github.com/robotics-upo/upo_path_tracker -b simplified
 SHELL ["/bin/bash", "-c"]
 RUN source /opt/ros/noetic/setup.sh
 RUN echo testing
