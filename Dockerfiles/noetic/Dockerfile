@@ -13,6 +13,7 @@ RUN cd ~ && git clone https://github.com/robotics-upo/upo_path_tracker -b simpli
 SHELL ["/bin/bash", "-c"]
 RUN source /opt/ros/noetic/setup.sh
 RUN cd ~/linux_install/scripts && git pull && ./install_marsupial.sh
+RUN cd ~/marsupial_ws && catkin_make -j4
 RUN cd ~/marsupial_ws/src/ && git clone -b ignition https://github.com/robotics-upo/marsupial_simulator.git
 RUN  cd ~/marsupial_ws/src/marsupial_simulator && git pull && script/setup_simulation.sh
 RUN cd ~/marsupial_ws/src/Onboard-SDK-ROS/Onboard-SDK-3.8.1-build/ && sudo make install

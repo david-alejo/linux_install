@@ -62,7 +62,7 @@ git clone -b melodic-devel https://github.com/robotics-upo/timed_roslaunch.git
 git clone -b simplified https://github.com/robotics-upo/upo_path_tracker.git
 
 # Get catenary checker
-git clone -b develop  https://github.com/robotics-upo/catenary_checker.git
+git clone -b dt_new_maths  https://github.com/robotics-upo/catenary_checker.git
 
 sudo apt-get install libqt5charts5-dev libqt5widgets5
 cd ~
@@ -75,6 +75,3 @@ make
 sudo make install
 cd ~/marsupial_ws/src
 
-# Compile the workspace
-cd ~/marsupial_ws
-catkin_make -j4
