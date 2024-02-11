@@ -41,7 +41,7 @@ git clone https://github.com/robotics-upo/nix_common.git
 
 # To install Random planners
 echo "\n Installing Random Planner \n\n"
-git clone -b develop https://github.com/SaimonMR/rrt_star_planners.git
+git clone -b feat_uav_planner_maths https://github.com/SaimonMR/rrt_star_planners.git
 
 # To install Marsupial Optimizer
 echo "\n Installing Marsupial Optimizer \n\n"
