@@ -11,7 +11,8 @@ sudo apt-get install libatlas-base-dev -y
 sudo apt-get install libeigen3-dev -y
 ## SuiteSparse and CXSparse (optional)
 sudo apt-get install libsuitesparse-dev -y
-
+## ABSL
+sudo apt-get install libabsl-dev -y
 
 cd ~
 git clone https://ceres-solver.googlesource.com/ceres-solver
