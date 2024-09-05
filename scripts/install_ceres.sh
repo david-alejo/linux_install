@@ -11,13 +11,10 @@ sudo apt-get install libatlas-base-dev -y
 sudo apt-get install libeigen3-dev -y
 ## SuiteSparse and CXSparse (optional)
 sudo apt-get install libsuitesparse-dev -y
-## ABSL
-sudo apt-get install libabsl-dev -y 
-
 cd ~
 git clone https://ceres-solver.googlesource.com/ceres-solver
 cd ceres-solver
-git checkout v2.1 -b marras
+git checkout 2.1.0 -b marras
 mkdir ceres-bin
 cd ceres-bin
 cmake ..
