@@ -16,10 +16,11 @@ sudo apt-get install libabsl-dev -y
 
 cd ~
 git clone https://ceres-solver.googlesource.com/ceres-solver
+cd ceres-solver
 git checkout v2.1 -b marras
 mkdir ceres-bin
 cd ceres-bin
-cmake ../ceres-solver
+cmake ..
 make -j6
 make test
 ## Optionally install Ceres, it can also be exported using CMake which

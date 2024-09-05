@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install git -y
 
 RUN cd ~/ && git clone https://github.com/david-alejo/linux_install && echo hola && apt-get update
 
-RUN cd ~/linux_install/scripts && sudo apt-get update && apt-cache search absl && sudo apt-get install libabsl-dev && ./install_ceres.sh
+RUN cd ~/linux_install/scripts && ./install_ceres.sh
 RUN git config --global credential.helper store
 RUN cd ~ && git clone https://github.com/robotics-upo/upo_path_tracker -b simplified
 SHELL ["/bin/bash", "-c"]
