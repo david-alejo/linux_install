@@ -5,7 +5,7 @@ FROM osrf/ros:noetic-desktop-full
 # Create workspace and download files
 RUN apt-get update && apt-get install git -y
 
-RUN cd ~/ && git clone https://github.com/david-alejo/linux_install && echo hola
+RUN cd ~/ && git clone https://github.com/david-alejo/linux_install
 
 RUN cd ~/linux_install/scripts && ./install_ceres.sh
 RUN git config --global credential.helper store
