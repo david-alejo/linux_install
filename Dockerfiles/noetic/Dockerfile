@@ -5,9 +5,9 @@ FROM osrf/ros:noetic-desktop-full
 # Create workspace and download files
 RUN apt-get update && apt-get install git -y
 
-RUN cd ~/ && git clone https://github.com/david-alejo/linux_install && apt-get install cmake
+RUN cd ~/ && git clone https://github.com/david-alejo/linux_install && apt-get install cmake && echo hola
 
-RUN cd ~/linux_install/scripts && ./install_ceres.sh && echo hola
+RUN cd ~/linux_install/scripts && ./install_ceres.sh 
 RUN git config --global credential.helper store
 RUN cd ~ && git clone https://github.com/robotics-upo/upo_path_tracker -b simplified
 SHELL ["/bin/bash", "-c"]
