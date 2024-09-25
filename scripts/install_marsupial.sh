@@ -33,9 +33,8 @@ make
 sudo make install
 cd ~/marsupial_ws/src
 
-if [ $1="no_git" ]; then
-   source="country"
-   samples="US Canada Mexico..."
+if [ $1 == "no_git" ]; then
+   echo "Skipping git cloning"
 else
     # For localization stuff
     git clone -noetic https://github.com/robotics-upo/dll.git
