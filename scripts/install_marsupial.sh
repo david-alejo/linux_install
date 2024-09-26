@@ -61,6 +61,10 @@ else
     echo "\n Installing Marsupial Optimizer \n\n"
     git clone -b develop_chur https://github.com/robotics-upo/marsupial_optimizer.git
 
+    # Installing marsupial mission interface
+    echo "\n Installing marsupial mission interface \n\n"
+    git clone https://github.com/robotics-upo/marsupial_mission_interface
+
     # To get action for actionlib
     echo "\n Installing UPO Actions \n\n"
     git clone -b marsupial https://github.com/robotics-upo/upo_actions.git
