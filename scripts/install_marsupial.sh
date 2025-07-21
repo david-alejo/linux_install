@@ -33,9 +33,8 @@ make
 sudo make install
 cd ~/marsupial_ws/src
 
-if [ $1="no_git" ]; then
-   source="country"
-   samples="US Canada Mexico..."
+if [ $1 == "no_git" ]; then
+   echo "Skipping git cloning"
 else
     # For localization stuff
     git clone -noetic https://github.com/robotics-upo/dll.git
@@ -61,6 +60,10 @@ else
     # To install Marsupial Optimizer
     echo "\n Installing Marsupial Optimizer \n\n"
     git clone -b develop_chur https://github.com/robotics-upo/marsupial_optimizer.git
+
+    # Installing marsupial mission interface
+    echo "\n Installing marsupial mission interface \n\n"
+    git clone https://github.com/robotics-upo/marsupial_mission_interface
 
     # To get action for actionlib
     echo "\n Installing UPO Actions \n\n"
