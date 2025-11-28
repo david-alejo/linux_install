@@ -16,6 +16,7 @@ alias arco="ssh idmind@arco"
 alias cm="cd ~/marsupial_ws && source devel/setup.bash && export IGNITION_VERSION=fortress && catkin_make"
 alias set_dji="cd ~/marsupial_ws/src/Onboard-SDK-ROS/Onboard-SDK-3.8.1-build/ && sudo make install && cd"
 alias set_ros2="source ~/ros2_ws/install/setup.bash"
+alias cb="cd ~/ros2_ws && colcon build --symlink-install"
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
