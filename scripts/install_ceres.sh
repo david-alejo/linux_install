@@ -14,7 +14,7 @@ sudo apt-get install libsuitesparse-dev -y
 cd ~
 git clone https://ceres-solver.googlesource.com/ceres-solver
 cd ceres-solver
-git checkout 2.2.0 -b marras
+git checkout 2.1.0 -b marras
 mkdir ceres-bin
 cd ceres-bin
 cmake ..
