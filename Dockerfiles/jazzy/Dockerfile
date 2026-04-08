@@ -2,7 +2,7 @@
 # With ROS2, Ubuntu 24.04 and new Gazebo
 FROM osrf/ros:jazzy-desktop-full
 
-# Install IGN Gazebo Garden
+# Install IGN Gazebo Harmonic
 RUN apt-get update && sudo apt-get install lsb-release wget gnupg nano inetutils-ping -y
 RUN lsb_release -cs
 RUN dpkg --print-architecture
@@ -14,6 +14,13 @@ RUN apt install ros-jazzy-ros-gz-interfaces ros-jazzy-xacro ros-jazzy-joy-teleop
 
 
 RUN apt install libspdlog-dev libceres-dev -y    
+
+RUN apt install git build-essential cmake genromfs python3-pip python3-venv -y
+
+# Install PX4 repository
+RUN git clone https://github.com/PX4/PX4-Autopilot.git --recursive
+# Set PX4 working directory
+RUN cd PX4-Autopilot/Tools/setup && ./ubuntu.sh --break-system-packages
 
 # By default the DockerFile uses the root as user. 
 # We will add a custom user so that we work in user space by default
@@ -32,4 +39,4 @@ USER jazzy
 # We will use the home directory as work directory
 # So that the docker starts at HOME!
 WORKDIR "/home/jazzy"
-
+ENV HOME="/home/jazzy"
